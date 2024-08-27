@@ -1,0 +1,773 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    /* list-style: none; */
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.intro{
+    background-color: yellow;
+    padding: 10px 200px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: black;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.video-wrap {
+    z-index: -100;
+  }
+  .custom-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+nav{
+    display: flex;
+    
+
+}
+nav a{
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: x-large;
+}
+nav a:hover{
+    background-color: black;
+    color: orangered
+    
+    
+}
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: white
+
+}
+#menu-icon{
+    display: none ;
+    color: white;
+    
+}
+.home-text h3{
+    font-size: 6rem;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+
+}
+.home-text{
+    padding: 30px 15%;
+    
+    text-align: center;
+    color: white;
+}
+.home{
+    position: relative;
+}
+.home-content{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+}
+.bottom-left {
+    
+    font-size: x-large;
+  }
+  .bottom-center{
+  
+    font-size:x-large;
+  }
+  .bottom-right{
+    
+    font-size: x-large;
+    
+  }
+.home-text p{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+
+
+}
+.home-text home-btn{
+    color:white;
+    background:orangered;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    padding: 20px 30px;
+    background: transparent;
+    transition: ease 0.4;
+
+}
+.about{
+    background: url(./edward-unsplash-blur\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container-box{
+    display: flex;
+}
+.text-card{
+    color: white;
+    margin: 150px;
+    font-weight: 600px;
+}
+.image-card{
+    border-radius: 10px;
+    min-height: 100px;
+    margin-top: 70px;
+    margin-right: 100px;
+    
+}
+.image-card img{
+    border-radius: 10%;
+}
+.artist-text{
+    text-align: center;
+    padding: 50px;
+}
+/* .containers{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.guitar{
+    grid-area: 1/1/3/2;
+
+}
+.singer{
+    grid-area:1/2/2/3 ;
+}
+.keyboard{
+    grid-area: 2/2/3/3;
+} */
+
+.artists-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 parts for large image, 1 part for small images */
+    gap: 10px;
+    padding: 10px;
+    margin-left: 20%;
+}
+
+.large-image,
+.small-image {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.large-image img{
+    width: 80%;
+    height: 100vh;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    
+}
+.small-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    
+}
+.small-images {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px;
+    column-gap: 10px;
+    
+}
+
+.details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 80%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px; 
+}
+
+.large-image:hover .details{
+    opacity: 1;
+    background-color: orange;
+    color: white;
+    font-size: larger;
+    width: 300px;
+    margin-left: -50px;
+
+    
+}
+
+
+
+.small-image:hover .details {
+    opacity: 1;
+    background-color: orange;
+    color: white;
+    font-size: larger;
+}
+.event-schedule{
+    display: grid;
+    background: url(./images/nainoa-shizuru-unsplash-blur.jpg);
+    width: 100%;
+    
+    
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:200px 400px 400px 300px;
+    grid-template-rows: 100px 300px 200px 200px;
+    padding: 0px 50px 0px 150px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
+}
+.item {
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    
+}
+.item1 , .item2,.item3,.item4{
+    background-color: orangered;
+}
+.item5,.item9,.item11,.item13,.item16{
+    background-color: #212529;
+}
+.item6{
+    background: url(./images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+}
+.item7,.item10{
+    background-color: #f3dcd4;
+}
+.item8{
+    background:url(./images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
+}
+.item12{
+    background-color: #d9e3da;
+}
+.item14{
+    background: url(./images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
+    width: 100%;
+}
+.item15{
+    background-color: #D1CFC0;
+}
+.item1{
+    border-radius: 20% 0 0  ;
+}
+.item4{
+    border-radius: 0 20% 0 0;
+}
+.item16{
+    border-radius:0 0  10%;
+}
+.item13{
+    border-radius: 0 0  0 10%;
+}
+.event-schedule  h1{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    padding-top: 20px;
+    display: inline-block
+}
+ /* pricing content */
+ .section-header{
+    text-align: center;
+    font-size: 50px;
+ }
+ .pricing-container {
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+    
+}
+
+.pricing-box {
+    background-color: #f7faff;
+    border: 5px dotted #000;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.pricing-box h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.price {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #000;
+}
+
+.detils {
+    color: #888;
+    margin: 10px 0;
+    display: flex;
+    
+
+}
+
+.detils li {
+    margin-bottom: 10px;
+}
+.buy-button {
+    display: inline-block;
+    color: #fbc219;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.buy-button::after {
+    content: ">";
+    font-size: 20px;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.buy-button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fbc219;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+/* contact form */
+
+.contact-header{
+    text-align: center;
+    margin: 50px ;
+    font-size: 40px;
+}
+.toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.toggle-buttons {
+    display: flex;
+    background-color: #f0f4ff;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    color: #666;
+    font-weight: bold;
+}
+
+button.active {
+    background-color: #ffc107;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.content form {
+    display: inline-block;
+    text-align: left;
+}
+
+.content form input,
+.content form textarea {
+    display: block;
+    width: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.content form button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content form button:hover {
+    background-color: #e64a19;
+}
+
+#googleMaps iframe {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* footer section */
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-top {
+    background-color: #f0531b;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-top h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcd00;
+}
+
+.footer-main {
+    padding: 40px 0;
+    font-size: large;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column h2 {
+    color: #ffcd00;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column p a:hover,
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+    text-decoration: underline;
+}
+
+@media  screen and (max-width : 1000px) {
+    body{
+        overflow-x: hidden;
+    }
+    .home-content{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        
+       
+    }
+    .bottom-right ul{
+        
+        justify-content: center;
+        
+    
+       
+    }
+    nav{
+        display: none;
+    }
+
+    .intro
+    {
+        padding: 10px;
+    }
+
+    .artists-section{
+        display: flex;
+    }
+    
+    .large-image{
+        display: block;
+        padding: 30px;
+    }
+
+    .small-image{
+        display:block;
+        padding: 30px;
+    }
+    .small-images{
+        display:block;
+    }
+    #artist{
+        display: block;
+    }
+
+
+    .event-schedule{
+        display: block;
+        text-align: center;
+
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns:20vw 20vw 20vw 20vw;
+        /* grid-template-rows: 100px 300px 200px 200px; */
+        padding: 10px 0px 10px 51px; 
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid;
+       
+        /* margin-bottom: 30px; */
+        
+        
+    }
+    .item {
+        border: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        text-align: center;
+        color: white;
+        
+    }
+    .item1 , .item2,.item3,.item4{
+        background-color: orangered;
+    }
+    .item5,.item9,.item11,.item13,.item16{
+        background-color: #212529;
+    }
+    .item6{
+        background: url(./images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    }
+    .item7,.item10{
+        background-color: #f3dcd4;
+    }
+    .item8{
+        background:url(./images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
+    }
+    .item12{
+        background-color: #d9e3da;
+    }
+    .item14{
+        background: url(./images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
+        width: 100%;
+    }
+    .item15{
+        background-color: #D1CFC0;
+    }
+    .item1{
+        border-radius: 20% 0 0  ;
+    }
+    .item4{
+        border-radius: 0 20% 0 0;
+    }
+    .item16{
+        border-radius:0 0  10%;
+    }
+    .item13{
+        border-radius: 0 0  0 10%;
+    }
+    .footer-main{
+        display:block;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        display: inline;
+        justify-content: space-between;
+    }
+    .image-card{
+        display: none;
+    }
+    .pricing-container {
+        display: block;
+        gap: 20px;
+        margin-left: 30px;
+        
+    }
+    .pricing-box {
+        background-color: #f7faff;
+        border: 5px dotted #000;
+        padding: 20px;
+        width: 600px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .pricing-box h2 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #000;
+    }
+    
+    .price {
+        font-size: 2em;
+        margin: 10px 0;
+        color: #000;
+    }
+    #menu-icon{
+        display: block;
+
+        color: white;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
